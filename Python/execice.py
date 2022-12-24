@@ -212,31 +212,43 @@
 
 
 ####
-from tkinter import *
-import random
+# from tkinter import *
+# import random
 
-def drawLine():
-  global x1, y1, x2, y2, color
-  can1.create_line(x1, y1, x2, y2, width=2, fill=color)
-  x1, y1, x2, y2 = 10, y1 - 10, 290, y2 - 10
+# def drawLine():
+#   global x1, y1, x2, y2, color
+#   can1.create_line(x1, y1, x2, y2, width=2, fill=color)
+#   x1, y1, x2, y2 = 10, y1 - 10, 290, y2 - 10
 
-def changeColor():
-  global color
-  palette=["purple", "green", "blue", "yellow", "orange", "maroon", "black", "cyan", "dark green", "grey"]
-  c = random.randrange(8)
-  color = palette[c]
+# def changeColor():
+#   global color
+#   palette=["purple", "green", "blue", "yellow", "orange", "maroon", "black", "cyan", "dark green", "grey"]
+#   c = random.randrange(8)
+#   color = palette[c]
 
-x1, y1, x2, y2 = 10, 150, 290, 150
-color = "dark green"
+# x1, y1, x2, y2 = 10, 150, 290, 150
+# color = "dark green"
 
-fen1 = Tk()
-can1 = Canvas(fen1, bg="dark grey", height=300, width=300)
-can1.pack(side=LEFT)
-btn1 = Button(fen1, text="Quitter", command=fen1.quit)
-btn1.pack(side=BOTTOM)
-btn2 = Button(fen1, text="Tracer une ligne", command=drawLine)
-btn2.pack()
-btn3 = Button(fen1, text="Autre coulor", command=changeColor)
-btn3.pack()
-fen1.mainloop()
+# fen1 = Tk()
+# can1 = Canvas(fen1, bg="dark grey", height=300, width=300)
+# can1.pack(side=LEFT)
+# btn1 = Button(fen1, text="Quitter", command=fen1.quit)
+# btn1.pack(side=BOTTOM)
+# btn2 = Button(fen1, text="Tracer une ligne", command=drawLine)
+# btn2.pack()
+# btn3 = Button(fen1, text="Autre coulor", command=changeColor)
+# btn3.pack()
+# fen1.mainloop()
 
+
+
+#### 
+class Personne:
+  def __init__(self):
+    self.nom = "Klilich"
+    self.prenom = "Yassine"
+    self.age = 26
+    self.address = "Branes 1"
+    
+per1 = Personne()
+print(per1.nom)
