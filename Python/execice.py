@@ -243,12 +243,32 @@
 
 
 #### 
-class Personne:
-  def __init__(self):
-    self.nom = "Klilich"
-    self.prenom = "Yassine"
-    self.age = 26
-    self.address = "Branes 1"
+# class Personne:
+#   def __init__(self):
+#     self.nom = "Klilich"
+#     self.prenom = "Yassine"
+#     self.age = 26
+#     self.address = "Branes 1"
     
-per1 = Personne()
-print(per1.nom)
+# per1 = Personne()
+# print(per1.nom)
+
+
+
+####
+class Point:
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+
+  def deplace(self, dx, dy):
+    self.x = self.x - dx
+    self.y = self.y - dy
+  
+  def decrire(self):
+    print("P1 = (", self.x, ", ", self.y, ")")
+  
+p1 = Point(11, 32)
+p1.decrire()
+p1.deplace(77, 25)
+p1.decrire()
